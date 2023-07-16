@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Filterable Table</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="filter.js"></script>
 </head>
 <body>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari berdasarkan negara..">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:50%;">Nama</th>
-    <th style="width:50%;">Negara</th>
-  </tr>
-  <tr>
-    <td>John Doe</td>
-    <td>Inggris</td>
-  </tr>
-  <tr>
-    <td>Jane Smith</td>
-    <td>Amerika</td>
-  </tr>
-  <tr>
-    <td>Budi Darmawan</td>
-    <td>Indonesia</td>
-  </tr>
-  <tr>
-    <td>Marie Curie</td>
-    <td>Perancis</td>
-  </tr>
-  <tr>
-    <td>Albert Einstein</td>
-    <td>Jerman</td>
-  </tr>
-</table>
-
+    <table id="myTable">
+        <tr class="header">
+            <th>
+                Name
+                <input type="text" id="nameInput" onkeyup="myFunction('nameInput', 0)" placeholder="Search for names..">
+            </th>
+            <th>
+                Country
+                <input type="text" id="countryInput" onkeyup="myFunction('countryInput', 1)" placeholder="Search for countries..">
+            </th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Sweden</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+    <script src="script.js"></script>
 </body>
 </html>
