@@ -4,27 +4,33 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <table id="myTable">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari berdasarkan nama..">
+<table id="myTable">
+    <thead>
         <tr class="header">
-            <th>
-                Name
-                <input type="text" id="nameInput" onkeyup="myFunction('nameInput', 0)" placeholder="Search for names..">
-            </th>
-            <th>
-                Country
-                <input type="text" id="countryInput" onkeyup="myFunction('countryInput', 1)" placeholder="Search for countries..">
-            </th>
+            <th style="width:33%;">Nama</th>
+            <th style="width:33%;">Umur</th>
+            <th style="width:33%;">Kota</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Andi</td>
+            <td>30</td>
+            <td>Jakarta</td>
         </tr>
         <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Germany</td>
+            <td>Budi</td>
+            <td>35</td>
+            <td>Bandung</td>
         </tr>
         <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Sweden</td>
+            <td>Charlie</td>
+            <td>40</td>
+            <td>Surabaya</td>
         </tr>
-        <!-- Add more rows as needed -->
-    </table>
-    <script src="script.js"></script>
+    </tbody>
+</table>
+<script src="script.js"></script>
 </body>
 </html>
